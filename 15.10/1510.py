@@ -1,3 +1,4 @@
+
 def formatting(ggg, assay, k, goj):
 
     text = ""
@@ -9,12 +10,8 @@ def formatting(ggg, assay, k, goj):
         assay = "<"
     for i in ggg:
             text += (("{0:" + goj + assay + str(k) + "s}").format(i))
-            text += "\k"
     return text
 
-ggg = input("enter the text: ").split()
-assay = input("center, left or right? ")
-k = int(input("enter the page size: "))
-goj = input("enter a mark: ")
-
-print(formatting(ggg, assay, k, goj))
+print(formatting(["asdfgh"], "left" , 10, "!"))
+print(formatting(["asdfgh"], "center" , 10, "!"))
+print(formatting(["asdfgh"], "right" , 10, "!"))
